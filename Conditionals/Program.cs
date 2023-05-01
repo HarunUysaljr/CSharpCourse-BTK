@@ -66,85 +66,85 @@ namespace Conditionals
             //}
 
 
-            // Single line if örneği 
-            // kullanıcının yaşına göre mekana girip giremeyeceği örneği
+            Single line if örneği
+             kullanıcının yaşına göre mekana girip giremeyeceği örneği
 
 
-            //int age;
+            int age;
 
-            //Console.WriteLine("Yaşınızı giriniz : ");
-            //age = Convert.ToInt32(Console.ReadLine()); 
+            Console.WriteLine("Yaşınızı giriniz : ");
+            age = Convert.ToInt32(Console.ReadLine());
 
-            //Console.WriteLine(age>=18 ? "Girebilir" : "giremez");
-
-
-            //
+            Console.WriteLine(age >= 18 ? "Girebilir" : "giremez");
 
 
-            //iç içe if örnekleri
-
-            // Kullanıcının maaşı asgarinin üzerinde mi üzerindeyse düzey durumu
-
-            //int maasBilgisi;
-            //int asgari = 8500;
-
-            //Console.WriteLine("Maaş bilgisi : ");
-            //maasBilgisi = Convert.ToInt32(Console.ReadLine());
-
-            //if (maasBilgisi > asgari)
-            //{
-            //    if (maasBilgisi >= 10000 && maasBilgisi <= 12500)
-            //    {
-            //        Console.WriteLine("Allah bereket versin");
-            //    }
-            //    else if (maasBilgisi > 12500 && maasBilgisi <= 18500)
-            //    {
-            //        Console.WriteLine("iyisin iyi");
-            //    }
-
-            //}
-            //else
-            //{
-            //    Console.WriteLine("Maaşın asgarinin altında bulunmaktadır doğru avrupa");
-            //}
 
 
-            // switch ile hesap makinesi yapımı
 
-            //Console.Write("Hangi işem ? çarpma 1- bölme 2 - toplama 3 - çıkarma 4");
-            //int karar = Convert.ToInt32(Console.ReadLine());
+            iç içe if örnekleri
 
-            //Console.WriteLine("Birinci sayıyı giriniz : ");
-            //int number1 = Convert.ToInt32(Console.ReadLine());
+             Kullanıcının maaşı asgarinin üzerinde mi üzerindeyse düzey durumu
 
-            //Console.WriteLine("ikinci sayıyı giriniz : ");
-            //int number2 = Convert.ToInt32(Console.ReadLine());
+            int maasBilgisi;
+            int asgari = 8500;
 
-            //switch (karar)
-            //{
+            Console.WriteLine("Maaş bilgisi : ");
+            maasBilgisi = Convert.ToInt32(Console.ReadLine());
 
-            //    case 1:
-            //        Console.WriteLine(number1 * number2);
-            //        break;
-           
+            if (maasBilgisi > asgari)
+            {
+                if (maasBilgisi >= 10000 && maasBilgisi <= 12500)
+                {
+                    Console.WriteLine("Allah bereket versin");
+                }
+                else if (maasBilgisi > 12500 && maasBilgisi <= 18500)
+                {
+                    Console.WriteLine("iyisin iyi");
+                }
 
-            //    case 2:
-            //        Console.WriteLine(number1 / number2);
-            //    break;
-           
-
-            //    case 3:
-            //        Console.WriteLine(number2 + number1);
-            //    break;
-          
-            //    case 4:
-            //        Console.WriteLine(number1 - number2);
-            //    break;
-            //}
+            }
+            else
+            {
+                Console.WriteLine("Maaşın asgarinin altında bulunmaktadır doğru avrupa");
+            }
 
 
-           // Console.ReadLine();
+            switch ile hesap makinesi yapımı
 
+                    Console.Write("Hangi işem ? çarpma 1- bölme 2 - toplama 3 - çıkarma 4");
+            int karar = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Birinci sayıyı giriniz : ");
+            int number1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("ikinci sayıyı giriniz : ");
+            int number2 = Convert.ToInt32(Console.ReadLine());
+
+            switch (karar)
+            {
+
+                case 1:
+                    Console.WriteLine(number1 * number2);
+                    break;
+
+
+                case 2:
+                    Console.WriteLine(number1 / number2);
+                    break;
+
+
+                    //    case 3:
+                    //        Console.WriteLine(number2 + number1);
+                    //    break;
+
+                    //    case 4:
+                    //        Console.WriteLine(number1 - number2);
+                    //    break;
+                    //}
+
+
+                    // Console.ReadLine();
+
+            }
         }
-    }
 }

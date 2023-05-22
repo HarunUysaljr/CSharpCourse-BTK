@@ -79,50 +79,50 @@ namespace ArraysExample
                 sayilar dizisi içerisindeki en büyük negatif sayıyı bularak ekrana yazdırınız.
                 sayilar dizisi elamanlarını küçükten büyüğe doğru sıralayarak oluşan yeni sıralamayı ekrana yazdırnız. Hazır fonksiyon kullanmayınız
              */
-            int[] sayilar = { 4, 5, -15, 22, -34, 3, 0, 7, 43, 100 };
+            //int[] sayilar = { 4, 5, -15, 22, -34, 3, 0, 7, 43, 100 };
 
-            foreach (var s in sayilar)
-            {
-                if (s%3==0)
-                {
-                    Console.WriteLine(s);
-                }
-            }
+            //foreach (var s in sayilar)
+            //{
+            //    if (s%3==0)
+            //    {
+            //        Console.WriteLine(s);
+            //    }
+            //}
 
-            Console.WriteLine("-----");
+            //Console.WriteLine("-----");
 
-            int kacCift = 0, kacTek = 0;
+            //int kacCift = 0, kacTek = 0;
 
-            foreach (var a in sayilar)
-            {
-                if (a%2==0)
-                {
-                    kacCift++;
-                }
-                else
-                {
-                    kacTek++;
-                }
-            }
+            //foreach (var a in sayilar)
+            //{
+            //    if (a%2==0)
+            //    {
+            //        kacCift++;
+            //    }
+            //    else
+            //    {
+            //        kacTek++;
+            //    }
+            //}
 
-            Console.WriteLine(kacTek);
-            Console.WriteLine(kacCift);
+            //Console.WriteLine(kacTek);
+            //Console.WriteLine(kacCift);
 
 
-            Console.WriteLine("---");
+            //Console.WriteLine("---");
 
-            int enBuyuk = sayilar[0];
-            
+            //int enBuyuk = sayilar[0];
 
-            for (int i = 0; i < sayilar.Length; i++)
-            {
-                if (enBuyuk > sayilar[i])
-                {
-                    enBuyuk = sayilar[i];
-                }
-            }
 
-            Console.WriteLine(enBuyuk);
+            //for (int i = 0; i < sayilar.Length; i++)
+            //{
+            //    if (enBuyuk > sayilar[i])
+            //    {
+            //        enBuyuk = sayilar[i];
+            //    }
+            //}
+
+            //Console.WriteLine(enBuyuk);
 
 
             //string[] student = new string[] { "harun", "uysal", "test" };
@@ -145,7 +145,144 @@ namespace ArraysExample
             //    Console.WriteLine(s);
             //}
 
+            //int[] number2 = { 22, 12, 50, -3, 5 };
+
+            //Console.WriteLine("--------Sayılar-----------");
+
+            //foreach (int n in number2)
+            //{
+            //    Console.WriteLine(n);
+            //}
+
+            //Console.WriteLine("------ Küçükten Büyüğe sıralama");
+
+            //Array.Sort(number2);// hazır metod
+            //foreach (int n in number2)
+            //{
+            //    Console.WriteLine(n);
+            //}
+
+            //Console.WriteLine("------- Büyükten küçüğe");
+
+            //Array.Reverse(number2); // ters çevirme metodu
+            //foreach (int n in number2)
+            //{
+            //    Console.WriteLine(n);
+            //}
+
+            //Console.ReadLine();
+
+
+            // Örnek 2
+
+            //int[] sayilar = { 12, 40, 16, 24, 51, 21, 52 };
+
+            ////int enBuyuk = 0;
+
+            ////enBuyuk = sayilar[0];
+
+            ////for (int i = 0; i < sayilar.Length; i++)
+            ////{
+            ////    if (enBuyuk < sayilar[i])
+            ////    {
+            ////        enBuyuk = sayilar[i];
+            ////    }
+            ////}
+
+            //Array.Sort(sayilar);
+
+            //Console.WriteLine("en küçük " + sayilar[0]);
+
+            //Console.WriteLine("En büyük : "+ sayilar[sayilar.Length-1]);
+
+            //string[] ogrenciler = new string[5];
+
+            //for (int i = 0; i < ogrenciler.Length; i++)
+            //{
+            //    Console.WriteLine("Öğrenci adını giriniz : ");
+            //    ogrenciler[i] = Console.ReadLine();
+
+            //}
+            //Console.WriteLine("---- alfabetik olarak sıralama");
+            //Array.Sort(ogrenciler);
+            //foreach (var i in ogrenciler)
+            //{
+
+            //    Console.WriteLine(i);
+            //}
+            //Console.WriteLine("----14 Mayıs seçim sonucu");
+            //Random rnd = new Random();
+            //int index = rnd.Next(ogrenciler.Length);
+
+
+            //Console.WriteLine("Cumhurbaşkanı " + ogrenciler[index]);
+
+
+
+
+            //int[] test = { 1, 2};
+
+            //Array.Resize(ref test, test.Length+1);
+
+            //test[test.Length-1] = 3;
+
+            //foreach
+            //    (var i in test)
+            //{
+            //    Console.WriteLine(i);
+            //}
+            //Random random = new Random();
+
+            //int[] example = new int[3];
+
+            //for (int i = 0; i < 3; i++)
+            //{
+            //    example[i] = random.Next(0,10);
+            //}
+
+            //foreach (var item in example)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //Console.Write("Eklemek istediğiniz sayı");
+            //int kulNumber = Convert.ToInt32(Console.ReadLine());
+
+            //Array.Resize(ref example, example.Length+1);
+            //example[example.Length - 1] = kulNumber;
+
+            //foreach (var item in example)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            int[] test = { 60, 55, 55, 80, 75, 75, 25, 55, 25 };
+
+            A:
+            Console.WriteLine("bir sayı giriniz : ");
+            int kull = Convert.ToInt32(Console.ReadLine());
+
+            if (kull == 0)
+            {
+                Console.WriteLine("0 giremezsin yavrucum");
+                goto A;
+            }
+
+            int adet = 0;
+
+            for (int i = 0; i < test.Length; i++)
+            {
+                if (kull == test[i])
+                {
+                    adet++;
+                } 
+            }
+
+            Console.WriteLine(kull + "  sayısından  " + adet + " adet vardır");
+
+
             Console.ReadLine();
+
 
         }
     }

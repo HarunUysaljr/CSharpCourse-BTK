@@ -5,6 +5,8 @@ VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example", "Example\Example.csproj", "{CA25128F-1C20-4586-ABA0-D01229A96CF1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringMetotlar", "StringMetotlar\StringMetotlar.csproj", "{708BD3BD-6BC8-4AB5-B326-AF1BB897D599}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{CA25128F-1C20-4586-ABA0-D01229A96CF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA25128F-1C20-4586-ABA0-D01229A96CF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA25128F-1C20-4586-ABA0-D01229A96CF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{708BD3BD-6BC8-4AB5-B326-AF1BB897D599}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{708BD3BD-6BC8-4AB5-B326-AF1BB897D599}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{708BD3BD-6BC8-4AB5-B326-AF1BB897D599}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{708BD3BD-6BC8-4AB5-B326-AF1BB897D599}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

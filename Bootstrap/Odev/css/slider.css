@@ -1,0 +1,30 @@
+<div class="carousel-one" >
+<div class="mySlides fade-In" >
+<div class="number-text" > 1/3</div >
+<img src="slider-1.jpg" / >
+<div class="caption-text" > Caption Text1</div >
+</div >
+<div class="mySlides fade-In" >
+<div class="number-text" > 2/3</div >
+<img src="slider-2.jpg" / >
+<div class="caption-text" > Caption Text2</div >
+</div >
+<div class="mySlides fade-In" >
+<div class="number-text" > 3/3</div >
+<img src="slider-3.jpg" / >
+<div class="caption-text" > Caption Text3</div >
+</div >
+<!-- Next and previous buttons start-- >
+<a class="prev-slide" > &#10094;</a >
+<a class="next-slide" > &#10095;</a >
+<!-- Next and previous buttons end-- >
+</div >
+<br / >
+<!-- dots start-- >
+<div class="dots" >
+<span class="dot dot1" > </span >
+<span class="dot dot2" > </span >
+<span class="dot dot3" > </span >
+</div >
+<!-- dots end-- >
+<!-- carousel end-- >

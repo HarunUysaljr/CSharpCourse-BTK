@@ -1,0 +1,106 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>JQuery Example</title>
+
+    <style>
+        .highlight {
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Jquery Helper Methods</h1>
+    <hr />
+
+    <form>
+        <input type="text" id="name" placeholder="Adýnýz..." />
+        <input type="text" id="surname" placeholder="SoyAdýnýz" />
+        <button type="submit" id="btnKaydet">Kaydet</button>
+
+    </form>
+    <hr />
+
+    <div style="height:250px;">
+        <img src="https://www.kaffeewiki.de/images/b/bd/Test.jpg" width="300" height="250" alt="Alternate Text" />
+    </div>
+    <br />
+
+
+    <button onclick="imgShow()">Göster</button>
+    <button onclick="imgHide()">Gizle</button>
+    <button onclick="imgToggle()">Göster / Gizle</button>
+
+    <hr />
+
+    <button onclick="EnLarge()">Büyült</button>
+    <button onclick="shrink()">Küçült</button>
+    <button onclick="Reset()">Resetle</button>
+
+    <hr />
+
+    <p id="sotd">Hayat kýsa kuþlar uçuyor</p>
+    <button onclick="high()">Vurgula</button>
+    <button onclick="deHigh()">Vurgu Çek</button>
+    <button onclick="toggleHigh()">Vurgula / Vurgu Çek</button>
+
+    <hr />
+
+    <button onclick="newMessage()">Mesajý deðiþtir</button>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+
+        $('#btnKaydet').click(function () {
+            var name = $('#name').val();
+            var surname = $('#surname').val();
+
+            alert(name + " " + surname + " kiþi kaydedildi.")
+        })
+
+        function imgShow() {
+            $('img').show();
+
+        }
+        function imgHide() {
+            $('img').hide();
+        }
+        function imgToggle() {
+            $('img').toggle();
+        }
+        function EnLarge() {
+            $('img').attr('width', '600')
+            $('img').attr('height', '500')
+        }
+        function shrink() {
+            $('img').attr('width', '150')
+            $('img').attr('height', '125')
+        }
+
+        function Reset() {
+            $('img').attr('width', '300')
+            $('img').attr('height', '250')
+        }
+
+        function high() {
+            $('#sotd').addClass('highlight')
+
+        }
+
+        function deHigh() {
+            $('#sotd').removeClass('highlight')
+        }
+
+        function toggleHigh() {
+            $('#sotd').toggleClass('highlight')
+        }
+
+        function newMessage() {
+            $('#sotd').html('Hayat kötü, <b>kuþlar düþtü <b>')
+            //.text olursa html kodlarýný çekmez
+        }
+
+    </script>
+</body>
+</html>

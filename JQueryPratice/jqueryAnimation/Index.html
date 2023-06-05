@@ -1,0 +1,34 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>JQueryAnimation</title>
+
+    <style>
+        .star{
+            position:absolute;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="star">
+        <img height="150"  width="190" src="https://static8.depositphotos.com/1472772/997/i/450/depositphotos_9977874-stock-photo-golden-star-isolated-over-white.jpg" alt="Yýldýz" />
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+
+
+    <script>
+        setInterval(function () {
+            $('.star').animate({
+                left: "+=55px",
+                top: "+=25px"
+            })
+        }, 1)
+
+    </script>
+</body>
+</html>
